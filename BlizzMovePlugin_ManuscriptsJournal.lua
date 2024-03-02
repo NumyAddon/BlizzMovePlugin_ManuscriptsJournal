@@ -37,8 +37,5 @@ function Plugin:ADDON_LOADED(addonName)
             FrameReference = journalFrame,
         }
     end
-    --local SoulshapeJournal = LibStub("AceAddon-3.0"):GetAddon('SoulshapeJournal')
-    --hooksecurefunc(SoulshapeJournal, 'OnEnable', function()
-        BlizzMoveAPI:RegisterAddOnFrames(frameTable);
-    --end);
+    BlizzMoveAPI:RegisterAddOnFrames(frameTable);
 end
