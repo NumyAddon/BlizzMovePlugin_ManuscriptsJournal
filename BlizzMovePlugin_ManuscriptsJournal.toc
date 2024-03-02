@@ -1,0 +1,12 @@
+## Interface: @toc-version-retail@
+## Title: BlizzMove Plugin - Manuscripts Journal
+## Notes: Allows you to move the Manuscripts Journal collection windows with BlizzMove
+## Author: Numy
+## IconTexture: Interface\Addons\BlizzMovePlugin_ManuscriptsJournal\media\icon
+## LoadOnDemand: 1
+## LoadWith: ManuscriptsJournal
+## RequiredDeps: BlizzMove, ManuscriptsJournal
+## Version: @project-version@
+## X-Curse-Project-ID: 981818
+
+BlizzMovePlugin_ManuscriptsJournal.lua
