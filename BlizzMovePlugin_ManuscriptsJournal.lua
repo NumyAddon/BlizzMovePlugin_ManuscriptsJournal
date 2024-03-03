@@ -1,13 +1,6 @@
 local name, Plugin = ...;
 
-do
-    local frame = CreateFrame('Frame');
-    frame:HookScript('OnEvent', function(_, _, addonName) Plugin:ADDON_LOADED(addonName); end);
-    frame:RegisterEvent('ADDON_LOADED');
-end
-
-function Plugin:ADDON_LOADED(addonName)
-    if addonName ~= name then return; end
+function Plugin:Init()
     local compatible = false;
     if(BlizzMoveAPI and BlizzMoveAPI.GetVersion and BlizzMoveAPI.RegisterAddOnFrames) then
         local _, _, _, _, versionInt = BlizzMoveAPI:GetVersion();
@@ -39,3 +32,5 @@ function Plugin:ADDON_LOADED(addonName)
     end
     BlizzMoveAPI:RegisterAddOnFrames(frameTable);
 end
+
+Plugin:Init();
