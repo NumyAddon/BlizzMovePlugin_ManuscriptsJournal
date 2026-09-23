@@ -5,6 +5,8 @@
 ## Title: BlizzMove Plugin - Manuscripts Journal
 ## Notes: Allows you to move the Manuscripts Journal collection windows with BlizzMove
 ## Author: Numy
+## X-GameType: [Game]
+## X-GameFamily: [Family]
 ## IconTexture: Interface\Addons\BlizzMovePlugin_ManuscriptsJournal\media\icon
 ## LoadOnDemand: 1
 ## LoadWith: ManuscriptsJournal
